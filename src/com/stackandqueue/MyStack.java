@@ -1,16 +1,17 @@
 package com.stackandqueue;
 
 public class MyStack {
-    Node head, top;
+    Node head;
 
     public void push(int data) {
         Node nnode = new Node(data);
         if (head == null) {
-            head = top = nnode;
+            head=nnode;
         } else {
-            Node temp = top;
-            top = nnode;
-            temp.next = top;
+            Node temp = head;
+            head = nnode;
+            head.data=nnode.data;
+            head.next=temp;
         }
     }
    public int peek(){

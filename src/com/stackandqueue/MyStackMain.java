@@ -6,6 +6,12 @@ public class MyStackMain {
         myStack.push(70);
         myStack.push(30);
         myStack.push(56);
-
+        System.out.println(myStack.peek());
+        myStack.pop();
+        System.out.println(myStack.peek());
+        myStack.pop();
+        System.out.println(myStack.peek());
+        myStack.pop();
+        myStack.pop();
     }
 }

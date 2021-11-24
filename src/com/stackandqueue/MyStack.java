@@ -13,7 +13,19 @@ public class MyStack {
             temp.next = top;
         }
     }
-   
+   public int peek(){
+        int value= head.data;
+        return value;
+   }
+   public void pop(){
+        if(head==null){
+            System.out.println("Stack is empty");
+        }
+        else{
+            Node temp=head;
+            head=head.next;
+        }
+   }
 
     class Node {
         int data;
